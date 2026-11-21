@@ -3,35 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>JARVIS AI</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="app">
-        <header>
-            <h1>J.A.R.V.I.S</h1>
-            <p>JUST A RATHER VERY INTELLIGENT SYSTEM</p>
-        </header>
+<div class="app">
 
-        <div class="orb-container">
-            <div class="orb" id="orb">
-                <div class="core"></div>
+    <header>
+        <h1>J.A.R.V.I.S</h1>
+        <p>PERSONAL AI ASSISTANT</p>
+    </header>
+
+    <div class="orb-container">
+        <div class="orb" id="orb">
+            <div class="core"></div>
+        </div>
+    </div>
+
+    <h2 id="status">SYSTEM STANDBY</h2>
+    <p id="response">Your AI assistant is ready.</p>
+
+    <div class="mode-buttons">
+        <button id="voiceMode">🎙️ VOICE MODE</button>
+        <button id="silentMode">⌨️ SILENT MODE</button>
+    </div>
+
+    <button id="startBtn">INITIALIZE JARVIS</button>
+
+    <div class="chat-container" id="chatContainer">
+
+        <div class="chat-header">
+            <span>SECURE CHAT</span>
+            <span id="modeStatus">SILENT MODE</span>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message jarvis-message">
+                <strong>JARVIS</strong>
+                <p>Greetings. How may I assist you?</p>
             </div>
         </div>
 
-        <h2 id="status">SYSTEM STANDBY</h2>
-        <p id="response">Say "Jarvis" to activate me.</p>
+        <div class="chat-input-area">
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Type your message..."
+                autocomplete="off"
+            >
 
-        <button id="startBtn">INITIALIZE JARVIS</button>
-
-        <div class="console">
-            <p id="log">System ready...</p>
+            <button id="sendBtn">SEND ➤</button>
         </div>
 
-        <footer>JARVIS AI • PERSONAL ASSISTANT</footer>
     </div>
 
-    <script src="script.js"></script>
+    <div class="console">
+        <p id="log">System ready...</p>
+    </div>
+
+    <footer>
+        JARVIS AI • PERSONAL ASSISTANT
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
